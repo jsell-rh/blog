@@ -1,10 +1,13 @@
----
-title: "I'm Almost Certainly Wrong"
-date: 2026-04-02
-draft: false
-summary: "Why I'm writing about fully autonomous software development, even though I'm probably wrong about most of it."
-tags: ["meta", "autonomous-development"]
----
++++
+title = "I'm Almost Certainly Wrong"
+date = "2026-04-02"
+author = "John Sell"
+tags = ["meta", "autonomous-development"]
+keywords = ["autonomous development", "gyre"]
+description = "Why I'm writing about fully autonomous software development, even though I'm probably wrong about most of it."
+showFullContent = false
+readingTime = true
++++
 
 I've been thinking a lot about a future of fully autonomous software development. I'm building [Gyre](https://github.com/jsell-rh/gyre) — a platform where humans design specs, orchestrators decompose tasks, and agents implement code in loops.
 

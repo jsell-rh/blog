@@ -1,37 +1,46 @@
 baseURL = "https://jsell-rh.github.io/blog/"
 languageCode = "en-us"
-title = "John Sell"
-theme = "PaperMod"
-[pagination]
-  pagerSize = 10
+theme = "re-terminal"
+pagination.pagerSize = 10
 
 [params]
-  env = "production"
-  description = "Thoughts on autonomous software development"
-  author = "John Sell"
-  showReadingTime = true
-  showShareButtons = false
-  showPostNavLinks = true
-  showBreadCrumbs = true
-  showCodeCopyButtons = true
-  defaultTheme = "auto"
-  disableSpecial1stPost = false
+  contentTypeName = "posts"
+  themeColor = "paper"
+  fullWidthTheme = false
+  centerTheme = true
+  readingTime = true
+  showMenuItems = 2
 
-  [params.homeInfoParams]
-    Title = "John Sell"
-    Content = """Thinking about the future of fully autonomous software development.\n\n*All views and opinions expressed here are my own and do not represent those of my employer.*"""
+[params.logo]
+  logoText = "john sell"
+  logoHomeLink = "/"
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/jsell-rh"
+[params.footer]
+  customFooter = "*All views and opinions expressed here are my own and do not represent those of my employer.*"
+
+[languages.en.params]
+  title = "John Sell"
+  subtitle = "Thinking about the future of fully autonomous software development."
+  keywords = "blog, autonomous development, gyre"
+  copyright = ""
+  menuMore = "Show more"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts"
 
 [markup]
-  [markup.highlight]
-    style = "dracula"
-    lineNos = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
