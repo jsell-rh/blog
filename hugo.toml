@@ -8,7 +8,7 @@ theme = "PaperMod"
 
 [params]
   env = "production"
-  description = "Thoughts on autonomous software development"
+  description = "Thoughts and opinions from my brain to yours."
   author = "John Sell"
   defaultTheme = "light"
   showReadingTime = true
@@ -17,10 +17,11 @@ theme = "PaperMod"
   showBreadCrumbs = true
   showCodeCopyButtons = true
   disableSpecial1stPost = false
+  comments = true
 
   [params.homeInfoParams]
-    Title = "John Sell"
-    Content = """Thinking about the future of fully autonomous software development.\n\n*All views and opinions expressed here are my own and do not represent those of my employer.*"""
+    Title = "My Thoughts and Opinions"
+    Content = """I'm thinking a lot about how the software development lifecycle will evolve in the age of AI.<br/>I expect my thoughts and opinions will age like milk, but I hope that sharing them here may be of some help to you. <br/><br/>*All views and opinions expressed here are my own and do not represent those of my employer.*"""
 
   [[params.socialIcons]]
     name = "github"
