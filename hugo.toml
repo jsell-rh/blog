@@ -19,7 +19,7 @@ theme = "PaperMod"
 
   [params.homeInfoParams]
     Title = "John Sell"
-    Content = "Thinking about the future of fully autonomous software development."
+    Content = """Thinking about the future of fully autonomous software development.\n\n*All views and opinions expressed here are my own and do not represent those of my employer.*"""
 
   [[params.socialIcons]]
     name = "github"
