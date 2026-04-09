@@ -89,7 +89,7 @@ done
 
 **And it mostly works.**
 
-I used this loop to build [Stego](https://github.com/jsell-rh/stego/tree/f7174e7b999376bd1bfa6a66c8f7218b7907dd4c), a declarative code generator <span style="opacity: 50%; font-style: italic;">[with a reconciler]</span> that eliminates accidental complexity from agent-written code.
+I used this loop to build [Stego](https://github.com/jsell-rh/stego/tree/f7174e7b999376bd1bfa6a66c8f7218b7907dd4c), a declarative code generator (think: Terraform for code) that eliminates accidental complexity from agent-written code.
 
 
 Before getting into the details, here's an example of the `bug` -> `process revision` flow: 
@@ -97,7 +97,7 @@ Before getting into the details, here's an example of the `bug` -> `process revi
 In STEGO, the compiler generates a program by
 assembling pieces from multiple independent code generators. On [round 9 of one task](https://github.com/jsell-rh/stego/blob/5bfd45bd8f27992f6b55b40fbe1cabe95bc52ade/specs/reviews/task-013.md?plain=1#L67),
 the verifier discovered that the assembler was outputting these pieces in the wrong order.
-It placed a piece of code that *uses* the database appeared before the line that *creates* it.
+It placed a piece of code that *uses* the database before the line that *creates* it.
 
 Each piece compiled fine on its own, and all unit tests passed. But the assembled program
 wouldn't run. The `verifier` step caught the bug and the [process-revision step](https://github.com/jsell-rh/stego/commit/e66eff4#diff-eee8e72ea7b7c8756b90d9bc864491335620f835533bdea29969470822b81bdeR270)
