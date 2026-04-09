@@ -1,0 +1,19 @@
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.post-content table th,
+.post-content table td {
+  padding: 0.4em 0.75em;
+  border: 1px solid var(--border);
+}
+
+.post-content table tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--primary) 4%, transparent);
+}
+
+.post-content table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+}
