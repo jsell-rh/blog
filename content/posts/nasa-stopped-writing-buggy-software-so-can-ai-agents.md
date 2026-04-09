@@ -1,7 +1,7 @@
 ---
 title: "NASA Stopped Writing Buggy Software. So Can AI Agents."
 date: 2026-04-07
-draft: true
+draft: false
 summary: "NASA's on-board shuttle group used process to eliminate production bugs. That same process might be the key to writing bug-free code with AI agents."
 tags: ["autonomous-development"]
 image: /blog/images/nasa-ralph-loop-header.png
