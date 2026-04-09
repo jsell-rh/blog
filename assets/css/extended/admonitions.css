@@ -1,0 +1,102 @@
+.admonition {
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid;
+}
+
+.admonition-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.admonition-title svg {
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.admonition-body > *:last-child {
+  margin-bottom: 0;
+}
+
+/* NOTE — blue */
+.admonition-note {
+  background-color: rgba(9, 105, 218, 0.08);
+  border-color: #0969da;
+}
+.admonition-note .admonition-title {
+  color: #0969da;
+}
+
+/* TIP — green */
+.admonition-tip {
+  background-color: rgba(26, 127, 55, 0.08);
+  border-color: #1a7f37;
+}
+.admonition-tip .admonition-title {
+  color: #1a7f37;
+}
+
+/* IMPORTANT — purple */
+.admonition-important {
+  background-color: rgba(130, 80, 223, 0.08);
+  border-color: #8250df;
+}
+.admonition-important .admonition-title {
+  color: #8250df;
+}
+
+/* WARNING — yellow */
+.admonition-warning {
+  background-color: rgba(154, 103, 0, 0.08);
+  border-color: #9a6700;
+}
+.admonition-warning .admonition-title {
+  color: #9a6700;
+}
+
+/* CAUTION — red */
+.admonition-caution {
+  background-color: rgba(207, 34, 46, 0.08);
+  border-color: #cf222e;
+}
+.admonition-caution .admonition-title {
+  color: #cf222e;
+}
+
+/* Dark mode adjustments */
+.dark .admonition-note {
+  background-color: rgba(56, 139, 253, 0.1);
+  border-color: #388bfd;
+}
+.dark .admonition-note .admonition-title { color: #388bfd; }
+
+.dark .admonition-tip {
+  background-color: rgba(63, 185, 80, 0.1);
+  border-color: #3fb950;
+}
+.dark .admonition-tip .admonition-title { color: #3fb950; }
+
+.dark .admonition-important {
+  background-color: rgba(163, 113, 247, 0.1);
+  border-color: #a371f7;
+}
+.dark .admonition-important .admonition-title { color: #a371f7; }
+
+.dark .admonition-warning {
+  background-color: rgba(210, 153, 34, 0.1);
+  border-color: #d29922;
+}
+.dark .admonition-warning .admonition-title { color: #d29922; }
+
+.dark .admonition-caution {
+  background-color: rgba(248, 81, 73, 0.1);
+  border-color: #f85149;
+}
+.dark .admonition-caution .admonition-title { color: #f85149; }
